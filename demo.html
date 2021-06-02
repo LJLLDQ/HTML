@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			img{
+				width: 500px;
+				height: 500px;
+			}
+			img{
+				width: 500px;
+				height: 500px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="./right/0.jpg" id="imgShow1">
+		<input type="button" value="这个好" onclick="changeImg1()" />
+	</body>
+	<body>	
+		<input type="button" value="一样好" onclick="changeImg0()" />
+	</body>
+	<body>	
+		<img src="./left/0.jpg" id="imgShow2">
+		<input type="button" value="这个好" onclick="changeImg2()" />
+	</body>
+	<script>
+		var i = 1;
+		var good_index = 0;
+		var bad_index = 0;
+		var fair_index = 0;
+		function changeImg0(){
+			document.getElementById("imgShow1").src='left/'+i+'.jpg';
+			document.getElementById("imgShow2").src='right/'+i+'.jpg';
+			i++
+			fair_index++
+			if(i==4){alert("测试结束\ngood得分："+good_index +"\nfair得分："+fair_index + "\nbad得分："+bad_index)}
+		}
+		function changeImg1(){
+			document.getElementById("imgShow1").src='left/'+i+'.jpg';
+			document.getElementById("imgShow2").src='right/'+i+'.jpg';
+			i++
+			good_index++
+			if(i==4){alert("测试结束\ngood得分："+good_index +"\nfair得分："+fair_index + "\nbad得分："+bad_index)}
+		}
+		function changeImg2(){
+			document.getElementById("imgShow1").src='left/'+i+'.jpg';
+			document.getElementById("imgShow2").src='right/'+i+'.jpg';
+			i++
+			bad_index++
+			if(i==4){alert("测试结束\ngood得分："+good_index +"\nfair得分："+fair_index + "\nbad得分："+bad_index)}
+		}
+	</script>
+</html>
