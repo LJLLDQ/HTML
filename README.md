@@ -1,5 +1,4 @@
-# HTML
-图片评估UI放置到端口上步骤：
+# HTML图片评估UI放置到端口上步骤：
 
 1. 使用python 输入python -m http.server
 或者F:\Anaconda\python.exe -m http.server 2828（找到python文件，输入指令，端口自己制定）
